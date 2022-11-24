@@ -1,0 +1,14 @@
+studentname='Dileep'
+studentnumber='07'
+studentclass='MSCS'
+S1=40
+S2=49
+S3=39
+print(studentname )
+print(studentnumber)
+print(studentclass)
+
+if(S1>=35 and S2>=35 and S3>=35):
+     print('pass')
+else:
+    print('fail')
