@@ -1,0 +1,5 @@
+balance=100000
+amount=int(input('enter amount'))
+creditedamount=amount
+totalamount=balance+creditedamount
+print('total balance',totalamount)
