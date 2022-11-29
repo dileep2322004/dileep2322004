@@ -1,0 +1,25 @@
+empname=input('enter name')
+empid=int(input('enter id'))
+basicsalary=int(input('enter salary'))
+da=int(input('enter da'))
+ta=int(input('enter ta'))
+hra=int(input('enter hra'))
+netsalary=basicsalary+da+ta+hra
+print('empname',empname)
+print('empid',empid)
+print('basicsalary',basicsalary)
+print('da',da)
+print('ta',ta)
+print('hra',hra)
+print('total salary',netsalary)
+if netsalary>100000:
+ tax=netsalary*10/100
+ print('tax',tax)
+elif netsalary>50000:
+ tax=netsalary*7/100
+ print('tax',tax)
+elif netsalary>20000:
+ tax=netsalary*4/100
+ print('tax',tax)
+elif netsalary>10000:
+ print('no tax')
