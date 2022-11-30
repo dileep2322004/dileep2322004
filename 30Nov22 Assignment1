@@ -1,0 +1,30 @@
+oil=200
+rice=20
+groundnut=100
+greendal=80
+reddal=70
+cname=input('enter name')
+cphno=input('enter number')
+cadd=input('enter add')
+oilq=int(input('enter how many packets do you want'))
+riceq=int(input('enter how many kgs rice you want'))
+groundnutq=int(input('enter how many kg do you want'))
+greendalq=int(input('enter how many kgs do you want'))
+reddalq=int(input('enter how many kgs do you want'))
+bill=(oilq*oil)+(riceq*rice)+(groundnut*groundnutq)+(greendalq*greendal)+(reddalq*reddal)
+if bill>=3000:
+ tax=bill*5/100
+elif bill>2000:
+ tax=bill*7/100
+elif bill>1000:
+ tax=bill*10/100
+elif bill>500:
+ tax=bill*15/100
+else:
+ tax=100
+totalbill=tax+bill
+print('cname',cname)
+print('cphno',cphno)
+print('cadd',cadd)
+print('tax',tax)
+print('total bill is',totalbill)
