@@ -1,0 +1,50 @@
+oil=200
+rice=20
+groundnut=100
+greendal=80
+reddal=70
+cname=input('enter name')
+cphno=input('enter number')
+cadd=input('enter add')
+oilq=int(input('enter how many packets do you want'))
+riceq=int(input('enter how many kgs rice you want'))
+groundnutq=int(input('enter how many kg do you want'))
+greendalq=int(input('enter how many kgs do you want'))
+reddalq=int(input('enter how many kgs do you want'))
+bill=(oilq*oil)+(riceq*rice)+(groundnut*groundnutq)+(greendalq*greendal)+(reddalq*reddal)
+coupon1=input('enter coupon code incapital letters')
+coupon2=input('enter couoon code in capital letters')
+if bill>=3000:
+ tax=bill*5/100
+elif bill>2000:
+ tax=bill*7/100
+elif bill>1000:
+ tax=bill*10/100
+elif bill>500:
+ tax=bill*15/100
+else:
+ tax=100
+if coupon1=='DIWALI' and bill>=5000:
+ dis1=bill*10/100
+elif coupon1=='DIWALI' and bill>=3000:
+ dis1=bill*6/100
+elif coupon1=='DIWALI' and bill>=1000:
+ dis1=bill*4/100
+else: 
+ dis1=0
+if coupon2=='CHRISMAS' and bill>=3000:
+ dis2=bill*20/100
+elif coupon2=='CHRISMAS' and bill>=2000:
+ dis2=bill*10/100
+elif coupon2=='CHRISMAS' and bill>=1000:
+ dis2=bill*5/100
+else:
+ dis=0
+totalbill=tax+bill-dis1-dis2
+print('cname',cname)
+print('cphno',cphno)
+print('cadd',cadd)
+print('tax',tax)
+print('discount',dis1)
+print(' another discount',dis2)
+print('total bill is',totalbill)
