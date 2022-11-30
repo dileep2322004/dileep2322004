@@ -1,0 +1,20 @@
+print('EPDCL')
+cscno=input('enter ur electicity bill number')
+cname=input('enter name ')
+unitsused=int(input('enter how many units you are used'))
+if unitsused>=500:
+ bill=unitsused*10
+elif unitsused>=400:
+ bill=unitsused*8
+elif unitsused>=300:
+ bill=unitsused*6
+elif unitsused>=200:
+ bill=unitsused*4
+elif unitsused>=100:
+ bill=unitsused*3
+else:
+ bill=unitsused*2
+print('cscno',cscno)
+print('cname',cname)
+print('units used by you',unitsused)
+print('total bill is',bill)
