@@ -1,0 +1,30 @@
+WAY-1:
+def leapyear(year):
+ if year%4==0 and (year%100!=0 or year%400==0):
+  print('LEAP YEAR')
+ else:
+  print('NOT LEAP YEAR')
+year=int(input('enter a'))
+leapyear(year)
+
+WAY-2:
+def leapyear(year):
+ if year%4==0 and (year%100!=0 or year%400==0):
+  return 'leapyear'
+ else:
+  return 'notleapyear'
+year=int(input('enter year'))
+print(leapyear(year))
+
+
+WAY-3:
+def leapyear(year):
+ if year%4==0 and (year%100!=0 or year%400==0):
+  return True
+ else:
+  return False
+year=int(input('enter year'))
+if (leapyear(year)):
+ print('leap year')
+else:
+ print('not leap year')
