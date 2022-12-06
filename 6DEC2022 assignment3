@@ -1,0 +1,14 @@
+n=int(input('enter n '))
+x=n
+sum=0
+l=len(str(n))
+while n!=0:
+  r=n%10
+  sum=sum+(r**l)
+  n=n//10
+if x==sum:
+  print(' Armstrong number')
+else:
+  print('not armstrong number')
+
+ 
