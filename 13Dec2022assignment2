@@ -1,0 +1,7 @@
+#n=int(input('enter size of n '))
+list=list(map(int,input().split()))
+a=[]
+for i in list:
+ if i not in a:
+  a.append(i)
+print(a)
