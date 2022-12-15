@@ -1,0 +1,12 @@
+n=int(input('enter size'))
+l=list(map(int,input().split()))
+p=[]
+np=[]
+for i in range(0,n):
+  if l[i]>=0:
+   p.append(l[i])
+  else:
+   np.append(l[i])
+l=p+np
+print(l)
+    
