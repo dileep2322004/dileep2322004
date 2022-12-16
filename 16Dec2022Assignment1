@@ -1,0 +1,6 @@
+str=input('enter a string')
+l=len(str)
+print('length of string is ',l)
+print('string in uppercase is ',str.upper())
+print('string in lower case is',str.lower())
+print('string in upper case to lower and lower to upper case is',str.swapcase())
