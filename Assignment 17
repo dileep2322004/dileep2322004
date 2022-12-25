@@ -1,0 +1,4 @@
+n=int(input('enter size of list'))
+l=list(map(int,input('enter numbers').split()))
+l.reverse()
+print(l)
