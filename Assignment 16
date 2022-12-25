@@ -1,7 +1,6 @@
 n=int(input('enter no of numbers:'))
-l=list(map(int, input('enter prime numbers').split()))
-x=max(l)
-y=min(l)
+list=list(map(int,input('enternumbers').split())
+x=max(list)
+y=min(list)
 z=x-y
-print(x,y)
-    
+print(z)
