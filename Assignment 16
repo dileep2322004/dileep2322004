@@ -1,0 +1,14 @@
+n=int(input("enter size "))
+l=[]
+for i in range(0,n):
+ num=int(input('enter num'))
+ l.append(num)
+for i in range(n):
+ for j in range(1+i,n):
+  if l[i]==l[j]:
+    print(l[i])
+    
+
+
+ 
+
