@@ -1,0 +1,14 @@
+n=int(input("enter size "))
+l=[]
+flag=0
+count=0
+for i in range(0,n):
+ num=int(input('enter num'))
+ l.append(num)
+x=int(input('enter number to found'))
+for i in range(n):
+
+  if l[i]==x :
+   print('element found at index',i)
+if l[i]!=x:
+ print(-1)
