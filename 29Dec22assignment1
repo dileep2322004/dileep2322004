@@ -1,0 +1,11 @@
+n=int(input('enter n'))
+m=list(map(int, input(). split()))
+x=int(input('enter range'))
+for j in range(x):
+    temp=m[0]
+    for i in range(0,n-1):
+        m[i]=m[i+1]
+    m[n-1]=temp
+for i in range(n):
+ print(m[i])
+    
