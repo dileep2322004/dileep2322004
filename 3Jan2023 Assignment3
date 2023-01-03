@@ -1,0 +1,17 @@
+l=[]
+r=int(input('enter no of rows:'))
+c=int(input('ener no of columns:'))
+for i in range(r):
+    m=[]
+    for j in range(c):
+        m.append(int(input('enter number:')))
+    l.append(m) 
+lsum=0
+for i in range(r):
+    lsum=lsum+l[i][i]
+rsum=0
+for i in range(r):
+    for j in range(c):
+        if i+j==r-1:
+            rsum=rsum+l[i][j]
+print('difference between left and right diagonal:', rsum-lsum)
