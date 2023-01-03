@@ -1,0 +1,11 @@
+l=[]
+r=int(input('enter no of rows:'))
+c=int(input('ener no of columns:'))
+for i in range(r):
+    m=[]
+    for j in range(c):
+        m.append(int(input('enter number:')))
+    l.append(m) 
+print('elements in left diagnol:')
+for i in range(r):
+    print(l[i][i], end=' ')
