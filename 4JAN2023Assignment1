@@ -1,0 +1,16 @@
+n=int(input('Enter dimensions:'))
+matrix=[]
+s=[]
+sum=0
+for i in range(n):
+    l=[]
+    for j in range (n):
+        x=int(input('Enter a value:'))
+        l.append(x)
+    matrix.append(l)
+for i in range(n):
+    for j in range(n):
+        if i==j or i+j==n-1:
+            sum=sum+matrix[i][j]
+            s.append(matrix[i][j])
+print(sum)
