@@ -1,0 +1,13 @@
+n=int(input('enter size'))
+l=[]
+for i in range(n):
+ x=int(input('enter number'))
+ l.append(x)
+l.sort()
+k=int(input('enter k'))
+a=l[k::]   
+print(a)
+y=max(a)
+z=min(a)
+res=y-z
+print(res)
