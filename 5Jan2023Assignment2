@@ -1,0 +1,12 @@
+n=int(input('enter size'))
+l=[]
+t=()
+for i in range(n):
+ x=int(input('enter number'))
+ l.append(x)
+for i in l:
+ if i%2==0:
+    l.remove(i)
+ t=tuple(l)
+print(t)
+    
