@@ -1,0 +1,9 @@
+n=int(input('enter size'))
+l=list(map(int,input('enter numbers').split()))
+m=[]
+for i in l:
+ if i not in m:
+  m.append(i)
+ else:
+  l.remove(i)
+print(m)
