@@ -1,0 +1,7 @@
+n=input('enter string')
+m=input('enter string')
+if n.endswith('@gmail.com') or m.isdigt() or m==10:
+  print('Registration sucessful')
+else:
+ print('Registration unsucessful')
+
