@@ -1,0 +1,9 @@
+n=input('enter string')
+if n.endswith('@gmail.com'):
+ print('you entered  google mail')
+elif n.endswith('@yahoo.com'):
+ print('you entered  Yahoo mail')
+elif n.endswith('@aditya.ac.in'):
+ print('you entered University mail')
+else:
+ print('you entered incorrect mail')
