@@ -1,0 +1,7 @@
+str=input()
+l=int(input())
+n=''
+for i in str:
+    for j in range(l):
+        n=n+i
+print(n)
