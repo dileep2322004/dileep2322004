@@ -1,0 +1,18 @@
+
+l=list(map(int,input().split()))
+m={}
+for i in l:
+ if i not in m:
+   m[i]=1
+ else:
+   m[i]=m[i]+1
+for i in m:
+ if m[i]>1:
+  x=i
+for j in m:
+ if m[j]<=1:
+   y=j
+if x>y:
+ print('diff',x-y)
+else:
+ print('diff',y-x)
